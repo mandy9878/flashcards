@@ -2,27 +2,28 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title>Test_me_assignment_3.0</title>
-        <script src="index3.0.js">
+        <title>Test_me_3.0</title>
+        <script type="text/javascript" src=../scripts/index3.0.js>
         </script>
     </head>
-    
     <body>
-        <!-- <button id = "button" onClick="onClick()">next question</button> -->
-        <div id="question-area">
-            <b>Question: </b>  <span id="question"></span>
-        </div>
-        <p>
-            <b>Answer: </b>  <span style="color:red;" id="answer"></span>
-            <br> Please hover on the question to see the answer.</br>
-        </p>
-        
-<!--         
-        <script> 
-    src="flashcards/basic/scripts/index3.0.js"
-    function displayAnswer() {
-    document.getElementById("demo").innerHTML = questionList();
-    }
-    </script> -->
+        <style>
+            div {
+              width: 320px;
+              padding: 10px;
+              border: 5px solid skyblue;
+              margin: 0;
+            }
+            </style>
+    <div>
+       Questions:
+       <p id = "question"></p>
+    </div>
+    
+    <div>
+        Answers:
+        <p id = "answer"></p>
+     </div>
+    <p>Please hover on the question to see the answer.</p>
     </body>
 </html>

@@ -2,55 +2,31 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title>Test_me_assignment_4.0</title>
-        <script src="index4.0.js">
+        <title>Test_me_4.0</title>
+        <script type="text/javascript" src=../scripts/index4.0.js>
         </script>
     </head>
-    
     <body>
-        <!-- <button id = "button" onClick="onClick()">next question</button> -->
-        <div id="question-area">
-            <b>Question: </b>  <span id="question"></span>
-        </div>
-        <p id="image">
-            <!-- <br><img src="../images/What is my favorite fruit.jpg" alt="fruit image" width="300" height="Auto" usemap="#workmap"></br>
-            <br><img src="../images/germany.jpg" alt="A picture of Germany" width="300" height="Auto" usemap="#workmap"></br>
-            <br><img src="../images/biking.jpg" alt="People biking in the woods" width="300" height="Auto" usemap="#workmap"><br> -->
-        </p>
-        <p>
-            <b>Answer: </b>  <span style="color:red;" id="answer"></span>
-            <br> Please press the image button first, and the question will come out with the image. Then hover on the question to see the answer.</br>
-        </p>
-        
-        <button onclick="myFunction()">Add an image</button>
-        <br><button onclick="myFunction_1()">Add a second image</button>
-        <br><button onclick="myFunction_2()">Add a third image</button>
-
-        <script>
-        function myFunction() {
-          let x = document.createElement("IMG");
-          x.setAttribute("src", "../images/What is my favorite fruit.jpg");
-          x.setAttribute("width", "300");
-          x.setAttribute("height", "auto");
-          x.setAttribute("alt", "fruit image");
-          document.body.appendChild(x);
-        }
-        function myFunction_1 () { 
-          let x = document.createElement("IMG");
-          x.setAttribute("src", "../images/germany.jpg");
-          x.setAttribute("width", "300");
-          x.setAttribute("height", "auto");
-          x.setAttribute("alt", "A picture of Germany");
-          document.body.appendChild(x);
-        }
-        function myFunction_2 () { 
-          let x = document.createElement("IMG");
-          x.setAttribute("src", "../images/biking.jpg");
-          x.setAttribute("width", "300");
-          x.setAttribute("height", "auto");
-          x.setAttribute("alt", "People biking in the woods");
-          document.body.appendChild(x);
-        }
-        </script>
+        <style>
+            div {
+              width: 320px;
+              padding: 10px;
+              border: 5px solid skyblue;
+              margin: 0;
+            }
+            </style>
+    <div>
+       Questions:
+       <p id = "question"></p>
+    </div>
+    <div>
+        Images:
+        <p><img id = "image" width= "300" height= "auto"></p>
+     </div>
+    <div>
+        Answers:
+        <p id = "answer"></p>
+     </div>
+    <p>Please hover on the question to see the answer.</p>
     </body>
 </html>
